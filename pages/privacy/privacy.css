@@ -1,0 +1,57 @@
+body {
+    font-family: Berlin Sans FB, sans-serif;
+    background: url("../../assets/img/homebackf.png") no-repeat fixed center;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    color: #004f76;
+    padding: 20px;
+}
+
+.content{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+h4{
+    color: #004f76;
+}
+
+h2{
+    font-size: 24px;
+    margin-top: 0;
+    color: #004f76;
+}
+
+ul{
+    list-style: disc;
+    margin-left: 20px;
+    color: #004f76;
+}
+
+footer{
+    background-color: #004f76;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

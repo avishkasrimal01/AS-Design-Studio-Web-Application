@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html" class="success">Home</a></li>
+                <li><a href="../service/service.html" class="success">Services</a></li>
+                <li><a href="../about/about.html" class="success">About Us</a></li>
+                <li><a href="../Contact/contact.html" class="success">Contact Us</a></li>
+                <li><a href="../Cart/cart.html" class="success">Cart <ion-icon name="cart-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="details">
+        <h1>Contact Us</h1>
+        <h2>Get in Touch</h2>
+        <p><ion-icon name="location-outline"></ion-icon><lable>&nbsp;&nbsp;No:317/2,Kumbuka Rd,Raigama North,Bandaragama</lable></p>
+        <p></p><ion-icon name="mail-outline"></ion-icon><lable>&nbsp;&nbsp;asdesignstudio02@gmail.com</lable></p>
+        <p></p><ion-icon name="call-outline"></p></ion-icon><lable>&nbsp;&nbsp;+94 (76) 557 0996</lable></p>
+        </div> 
+    
+    <div class="map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.3659028491684!2d80.01636471888172!3d6.725130253482849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb1847cb5bde593f%3A0xc87ea0647de20cd2!2sAS%20Design%20Studio!5e0!3m2!1sen!2slk!4v1698477436250!5m2!1sen!2slk" width="1000" height="500" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> 
+
+        <section id="contact-form">
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2023 AS Design Studio. All rights reserved.<a href="../privacy/privacy.html">Privacy Policy</a></p>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

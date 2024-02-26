@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html" class="success">Home</a></li>
+                <li><a href="../service/service.html" class="success">Services</a></li>
+                <li><a href="../about/about.html" class="success">About Us</a></li>
+                <li><a href="../Contact/contact.html" class="success">Contact Us</a></li>
+                <li><a href="../Cart/cart.html" class="success">Cart <ion-icon name="cart-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="topic">
+        <h1>Services</h1>
+    </div>
+    <div class="topic2">
+        <p>Design Categories</p>
+    </div>
+
+    <div class="imgdiagram">
+        <p> <img src="../../assets/img/serviced3.jpg" width="1000px" height="auto"></p>
+    </div>
+
+    <section id="category-grid">
+        <div class="category">
+            <a href="../../pages/service/category/1/1.html">
+                <div class="outer-1"><img src="../../assets/img/S1.png" alt="Logo and Brand Identity Design">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/2/2.html">
+                <div class="outer-1"><img src="../../assets/img/S2 4.png" alt="Art and Illustration">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/3/3.html">
+                <div class="outer-1"><img src="../../assets/img/S3.png" alt="Advertising and Marketing Design">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/4/4.html">
+                <div class="outer-1"><img src="../../assets/img/S4.png" alt="Vector Design">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <img src="../../assets/img/S9.png" alt="logo">
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/5/5.html">
+                <div class="outer-1"><img src="../../assets/img/S5.png" alt="Business Cards and Stationery Design">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/6/6.html">
+                <div class="outer-1"><img src="../../assets/img/S6.png" alt="Infographics Design">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/7/7.html">
+                <div class="outer-1"><img src="../../assets/img/S7.png" alt="Photography and Retouching">
+            </a>
+        </div>
+        </div>
+        <div class="category">
+            <a href="../../pages/service/category/8/8.html">
+                <div class="outer-1"><img src="../../assets/img/S8.png" alt="Video Editing">
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <header>
+        <h1>Add Reviews</h1>
+    </header>
+    <section class="form">
+        <form action="review.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="review">Review About Our Service:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <hr>
+            <button type="submit" name="submit" id="submit">Submit Review</button>
+            <hr>
+            <button type="Read" onclick="location.href='../../pages/service/review2.php'">Read Reviews</button>
+            <hr>
+        </form>
+    </section>
+    <p></p>
+
+
+    <footer>
+        <p>&copy; 2023 AS Design Studio. All rights reserved.<a href="../privacy/privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

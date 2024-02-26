@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <script>
+	
+        function validateUserName()
+        {
+            var email = document.getElementById("txtEmail").value;
+            
+            if((email == "") || (email == null))
+                {
+                    alert("Please enter valid username");
+                    return false;
+                }
+                
+            return true;
+        }
+        
+        function validatePassword()
+        {
+            var password = document.getElementById("txtpassword").value;
+            
+            if((password.length > 8))
+                {
+                    alert("Please enter the correct password")
+                    return false;
+                }
+            return true;
+        }
+        
+        function validateAll()
+        {
+            if(validateUserName() && validatePassword())
+                {
+                    
+                }
+            else
+                {
+                    event.preventDefault();
+                }
+        }
+    
+    </script>
+</head>
+
+<body>
+    <div class="grid-item">
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="login.php" method="post">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" name="txtEmail" id="txtEmail" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" name="txtpassword" id="txtpassword" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Remember Me | <a href="#">Forget
+                                    Password</a></label>
+                        </div>
+                        <button type="submit" name="submit" id="submit">Log In </button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="../../pages/signup/signup.html">Register</a></p>
+                            <!-- <p>Admin Login? <a href="../../pages/admin/admin.html">@Admin</a></p> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>

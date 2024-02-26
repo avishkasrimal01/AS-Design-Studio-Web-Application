@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+
+    <script type="text/javascript" language="javascript">
+
+        function validateName()
+        {
+            var fname = document.getElementById("txtName").value;
+            
+            if((name == "") || (name == null))
+                {
+                    alert("Please enter name");
+                    return false;
+                }
+             
+            return true;	
+        }
+        
+        function validatePhoneNumber()
+        {
+            var num = document.getElementById("txtPhone").value;
+            
+            if((isNaN(num)) || num == "")
+            {
+                alert("Please enter valid phone number");
+                return false;
+            }
+            
+            return true;
+        }
+        
+        function validateEmail()
+        {
+            var email = document.getElementById("txtEmail").value;
+            var at = email.indexOf("@");
+            var dt = email.lastIndexOf(".");
+            var len = email.length;
+            
+            if((at < 2) || (dt-at < 2) || (len-dt < 2))
+                {
+                    alert("Please enter valid email address");
+                    return false;
+                }
+                alert("email correct");
+                return true;
+        }
+        
+        function validatePassword()
+        {
+            var password = document.getElementById("txtpassword").value;
+            var Cpassword = document.getElementById("txtCpassword").value;
+            
+            if((password.length > 8) || (password != Cpassword))
+                {
+                    alert("Please enter the correct password")
+                    return false;
+                }
+                    return true;
+        }
+        
+        function validateAll()
+        {
+            if(validateName() && validatePhoneNumber() && validateEmail() && validatePassword())
+                {
+                    alert("Successfully signed up..!!");
+                }
+            else
+                {
+                    event.preventDefault();
+                }
+        }
+    
+        
+    </script>
+
+</head>
+
+<body>
+    <div class="grid-item">
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="signup.php" method="post">
+                        <h2>Sign Up</h2>
+                        <div class="inputbox">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="name" name="txtName" id="txtName" required/>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input type="text" name="txtPhone" id="txtPhone" maxlength = "10" required/>
+                            <label for="">Mobile Number</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" name="txtEmail" id="txtEmail" required/>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" name="txtpassword" id="txtpassword" maxlength = "8" required/>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" name="txtCpassword" id="txtCpassword" maxlength = "8" required/>
+                            <label for="">Re-Password</label>
+                        </div>
+                        <button type="submit" name="submit" id="submit">Sign Up </button>
+                        <div class="register">
+                            <p>Already have an account? <a href="../../pages/login/login.html">Log In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>

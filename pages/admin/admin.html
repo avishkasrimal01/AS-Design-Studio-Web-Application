@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="../../assets/img/logo_admin.png" width=180px>
+            <div class="admin">
+                <p>Admin</p>
+            </div>
+            <div class="links">
+            <nav>
+                <ul>
+                    <li><button onclick="window.location.href='../home/home.html'"><ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Home</button></li>
+                    <li><button onclick="window.location.href='../service/service.html'"><ion-icon name="code-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Projects</button></li>
+                    <li><button onclick="window.location.href='./showuser.php'"><ion-icon name="person-circle-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Clients</button></li>
+                    <li><button onclick="window.location.href='./AddServices.php'"><ion-icon name="settings-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Settings</button></li>
+                    <li><button onclick="window.location.href='https://www.google.com'"><ion-icon name="help-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Help</button></li>
+                    <li><button onclick="window.location.href='../login/login.html'"><ion-icon name="log-out-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Log Out</button></li>
+            </nav>
+        </div>
+        </div>
+
+        <div class="CRUD">
+            <table width="785" height="339" border="0" align="center">
+                <tbody>
+                  <tr>
+                    <td height="79" colspan="3" bgcolor="#004f76"><h2>AS Design Studio</h2></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#E4DFDF"><input type="button" name="button" id="button" onclick="document.location='AddServices.php'" value="Add Services"></td>
+                    <td bgcolor="#E4DFDF"><input type="button" name="button" id="button4" onclick="document.location='ViewServices.php'" value="View Service Requests"></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#E4DFDF"><input type="button" name="button2" id="button2" onclick="document.location='showcontact.php'" value="Contact Details"></td>
+                    <td bgcolor="#E4DFDF"><input type="button" name="button3" id="button3" onclick="document.location='showuser.php'" value="View Users"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="main-content">
+            <div class="widget">
+                <h2>Monthly Engaging</h2>
+                <img src="../../assets/img/static.jpg" height="130px">
+
+            </div>
+            <div class="widget">
+                <h2>Statics</h2>
+                <img src="../../assets/img/static2.png" height="130px">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 AS Design Studio. All rights reserved.<a href="../privacy/privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

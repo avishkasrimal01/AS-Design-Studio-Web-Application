@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+body {
+  font-family: Berlin Sans FB, sans-serif;
+  background-color: #ffffff;
+  background: url("../../assets/img/homebackf.png") no-repeat fixed center;
+  background-position: center;
+  background-size: cover;
+}
+
+div.tabs {
+  font-weight: 500;
+}
+
+h2 {
+  color: #004f76;
+  font-weight: 500;
+  text-align: center;
+}
+
+td {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+input[type=button] {
+  width: 50%;
+  background-color: #c4996c;
+  color: white;
+  padding: 10px 10px;
+  margin: 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  left: 60px;
+}
+
+input[type=button]:hover {
+  background-color: #c4ad96;
+}
+
+div.p1 {
+  color: white;
+  text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+.para {
+  font-weight: 500;
+  text-align: center;
+}
